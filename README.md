@@ -38,7 +38,10 @@ GIF created with ...
 
 ## Notes
 
-I did not have time to implement a flip animation, especially because I would have to refactor my program to better match the resource given for the card flip animation.
+Describe any challenges encountered while building the app.
+
+* I did not have time to implement a flip animation, especially because I would have to refactor my program to better match the resource given for the card flip animation.
+
 
 ## License
 
