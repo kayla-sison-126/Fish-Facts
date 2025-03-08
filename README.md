@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Back button, which allows user to return to previous cards (until first card is reached)
-* [x] Times studied count, which counts the amount of times that every card is cycled through
+* [x] "Times studied" count, which counts the amount of times that every card is cycled through
 
 ## Video Walkthrough
 
@@ -38,7 +38,7 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I did not have time to implement a flip animation, especially because I would have to refactor my program to better match the resource given for the card flip animation.
 
 ## License
 
