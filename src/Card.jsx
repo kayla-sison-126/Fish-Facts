@@ -8,6 +8,7 @@ const Card = (props) => {
 
         return (
             <div className="Card">
+                <br></br>
                 <h3>Question No. {currCard.number}</h3>
                 <h4>{currCard.question}</h4>
                 <br></br>
@@ -20,12 +21,15 @@ const Card = (props) => {
 
         return (
             <div className="Card">
+                <br></br>
+                <br></br>
                 <h3>Answer: {currCard.answer}</h3>
                 <br></br>
                 <img src={currCard.photo} style={{height: '100px'}}/>
             </div>
         )
     }
+
 }
 
 export default Card;
