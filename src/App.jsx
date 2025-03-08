@@ -1,34 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Card from './Card'
+import { useState } from 'react';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+const App = () => {
+  const [index, setIndex] = useState(0);
+  const [cycleCount, setCount] = useState(0);
+
+  const updateIndex = () => {
+    if (index+1 <= 9) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+      setCount(cycleCount+1);
+    }
+  }
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+        <div className="header">
+          <h2>fast fish facts !</h2>
+          <h3>~ test your fish knowledge ~</h3>
+        </div>
+
+        <div className="card">
+          <Card index={index}/>
+        </div>
+
+        <button onClick={updateIndex}>Next</button>
+        <p>{index+1} of 10</p>
+        <p>Times studied: {cycleCount}</p>
+    </div>
   )
 }
 

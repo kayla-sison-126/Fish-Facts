@@ -28,6 +28,10 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
+  background-image: url('https://gifdb.com/images/high/flowing-water-background-3or1h2fe6iuieki4.gif');
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
