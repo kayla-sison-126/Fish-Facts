@@ -55,6 +55,16 @@ const App = () => {
     setFlip(!flipped);
   }
 
+  // for the text input
+  const [inputValue, setInputValue] = useState('');
+
+  // Handle change in input field
+  const handleChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  //
+
   return (
     <div className="App">
         <div className="header">
@@ -63,18 +73,26 @@ const App = () => {
           <p>{index+1} of 10</p>
         </div>
 
-        <div className="card" onClick={toggleFlip}>
-          <Card index={shuffledIndices[index]} flipped={flipped} />
+        <div className="cardRow">
+
+          <button className="button" onClick={decIndex}>🡐</button>      
+          <div className="card" onClick={toggleFlip}>
+            <Card index={shuffledIndices[index]} flipped={flipped} />
+          </div>
+          <button className="button" onClick={updateIndex}>🡒</button>      
+        
         </div>
 
-        <div className="buttons">
-          <button className="button" onClick={decIndex}>Back</button>      
-          <button className="button" onClick={updateIndex}>Next</button>      
-          <button className="button" onClick={shuffleButton} title="Shuffle and restart round">Shuffle</button>      
-        </div>
 
         <div className="inputField">
-          <input id="answerBox" type="text" placeholder="Type your answer here..."></input>
+          <button id="shuffle-button"className="button" onClick={shuffleButton} title="Shuffle and restart round">Shuffle</button>      
+          <input id="answerBox"
+            type="text"
+            placeholder="Type your answer here..."
+            value={inputValue} 
+            onChange={handleChange} 
+            />
+          <button id="submit-button" className="button" onClick={handleChange}>Submit</button>
         </div>
 
         <div className="info">
