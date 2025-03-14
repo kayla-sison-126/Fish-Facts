@@ -23,9 +23,14 @@ const App = () => {
     return shuffled;
   };
 
-  // initial shuffling of the cards
-  const [shuffledIndices, setShuffledIndices] = useState(shuffleArray([0,1,2,3,4,5,6,7,8,9]));
+  // set the initial ordering of the cards (numerical/non-shuffled)
+  const [shuffledIndices, setShuffledIndices] = useState(([0,1,2,3,4,5,6,7,8,9]));
 
+  // manual shuffle (for the shuffle button)
+  const shuffleButton = () => {
+    shuffleCards();
+    setIndex(0);
+  }
 
   const updateIndex = () => {
     if (index+1 <= 9) {
@@ -36,6 +41,7 @@ const App = () => {
       setIndex(0);
       setCount(cycleCount+1);
       shuffleCards();
+
     }
   }
 
@@ -54,6 +60,7 @@ const App = () => {
         <div className="header">
           <h2>~ ˚.⋆ fish facts ! ⋆.˚ ~</h2>
           <h3>test your fish knowledge with this fun question set! :)</h3>
+          <p>{index+1} of 10</p>
         </div>
 
         <div className="card" onClick={toggleFlip}>
@@ -61,12 +68,16 @@ const App = () => {
         </div>
 
         <div className="buttons">
-          <button onClick={decIndex}>Back</button>      
-          <button onClick={updateIndex}>Next</button>      
+          <button className="button" onClick={decIndex}>Back</button>      
+          <button className="button" onClick={updateIndex}>Next</button>      
+          <button className="button" onClick={shuffleButton} title="Shuffle and restart round">Shuffle</button>      
+        </div>
+
+        <div className="inputField">
+          <input id="answerBox" type="text" placeholder="Type your answer here..."></input>
         </div>
 
         <div className="info">
-          <p>{index+1} of 10</p>
           <h4>Times studied: {cycleCount}</h4>
         </div>
     </div>
