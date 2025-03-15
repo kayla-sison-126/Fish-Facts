@@ -1,6 +1,7 @@
 import './App.css';
 import Card from './Card'
 import { useState } from 'react';
+import { flashcardsList } from './data.jsx';
 
 
 const App = () => {
@@ -56,11 +57,30 @@ const App = () => {
   }
 
   // for the text input
+
+
   const [inputValue, setInputValue] = useState('');
 
   // Handle change in input field
   const handleChange = (event) => {
     setInputValue(event.target.value);
+  };
+
+  const onSubmit = () => {
+    const currCard = flashcardsList[shuffledIndices[index]];
+    const correctAnswer = currCard.answer;
+    if(inputValue.trim().toLowerCase() === correctAnswer.toLowerCase()) {
+      giveFeedback("Correct");
+    } else {
+      giveFeedback("Incorrect");
+    }
+    setInputValue(''); // reset input field
+  }
+
+  const [feedback, setFeedback] = useState('');
+
+  const giveFeedback = (message) => {
+    setFeedback(message);
   };
 
   //
@@ -77,7 +97,7 @@ const App = () => {
 
           <button className="button" onClick={decIndex}>🡐</button>      
           <div className="card" onClick={toggleFlip}>
-            <Card index={shuffledIndices[index]} flipped={flipped} />
+            <Card index={shuffledIndices[index]} flipped={flipped} feedback={feedback}/>
           </div>
           <button className="button" onClick={updateIndex}>🡒</button>      
         
@@ -92,7 +112,14 @@ const App = () => {
             value={inputValue} 
             onChange={handleChange} 
             />
-          <button id="submit-button" className="button" onClick={handleChange}>Submit</button>
+
+          <button
+            id="submit-button"
+            className="button"
+            onClick={onSubmit}
+          >
+            Submit
+          </button>
         </div>
 
         <div className="info">

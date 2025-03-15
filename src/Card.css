@@ -25,3 +25,11 @@
     color: rgb(203, 55, 32);
     font-weight: bold;
 }
+
+.feedbackCorrect {
+    color: green;
+}
+
+.feedbackIncorrect {
+    color: rgb(200, 45, 45);
+}

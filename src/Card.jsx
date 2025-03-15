@@ -15,7 +15,10 @@ const Card = (props) => {
                 <img src={'https://cdn3.emoji.gg/emojis/think_fish.png'} style={{height: '70px'}}/>
                 <br></br>
                 <p className={'difficulty' + currCard.difficulty}>Difficulty: {currCard.difficulty}</p>
-            </div>
+                <div className={'feedback' + props.feedback}>
+                    <h3>{props.feedback}</h3>
+                </div>
+                      </div>
         )
     } else { /* back of card */
 
