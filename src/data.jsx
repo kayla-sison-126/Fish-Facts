@@ -14,7 +14,7 @@ export const flashcardsList = [
         number: 2,
         difficulty: 'Easy',
         question: 'What is the term for a group of fish swimming together?',
-        answer: 'A school',
+        answer: 'School',
         photo: 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fd5e143e-3c83-45fa-aba1-d2c7a2c8146e/dhugwm3-0da5f740-2869-4377-8799-dd0118bca10c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZkNWUxNDNlLTNjODMtNDVmYS1hYmExLWQyYzdhMmM4MTQ2ZVwvZGh1Z3dtMy0wZGE1Zjc0MC0yODY5LTQzNzctODc5OS1kZDAxMThiY2ExMGMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.GResg1s7LQP8NiO4eq49J2jirZRoPvMH7XemHQSiKRQ'
     },
 

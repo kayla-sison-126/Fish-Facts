@@ -31,6 +31,7 @@ const App = () => {
   const shuffleButton = () => {
     shuffleCards();
     setIndex(0);
+    giveFeedback("");
   }
 
   const updateIndex = () => {
@@ -42,8 +43,8 @@ const App = () => {
       setIndex(0);
       setCount(cycleCount+1);
       shuffleCards();
-
     }
+    giveFeedback("");
   }
 
   const decIndex = () => {
@@ -51,6 +52,7 @@ const App = () => {
       setFlip(false);
       setIndex(index - 1);
     }
+    giveFeedback("");
   }
   const toggleFlip = () => {
     setFlip(!flipped);
