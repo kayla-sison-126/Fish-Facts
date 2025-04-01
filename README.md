@@ -24,9 +24,6 @@ The following functionality is completed:
 * [x] **"Times studied" count, which counts the amount of times that every card is cycled through**
 
 ## GIF Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
 <img src='src\images\fishfacts-GoogleChrome2025-03-1423-50-21-ezgif.com-video-to-gif-converter.gif' title='Video Walkthrough' width='' alt='Walkthrough' />
 
 GIF created with 
