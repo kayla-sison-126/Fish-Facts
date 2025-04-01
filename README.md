@@ -12,33 +12,24 @@ HTML, CSS, JavaScript, React
 
 <!-- Time spent: 2 hours spent in total -->
 
-## Required Features
+## Features
 
-The following **required** functionality is completed:
+The following functionality is completed:
 
 - [x] **The user can enter their guess in a box before seeing the flipside of the card**
 - [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
 - [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
 - [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
-<!-- 
-The following **optional** features are implemented:
--->
-- [x] A shuffle button is used to randomize the order of the cards
-<!-- - [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
-- [ ] A counter displays the user's current and longest streak of correct responses
-- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
+- [x] **A shuffle button is used to randomize the order of the cards**
+* [x] **"Times studied" count, which counts the amount of times that every card is cycled through**
 
-The following **additional** features are implemented:
--->
-* [x] "Times studied" count, which counts the amount of times that every card is cycled through
-
-## Video Walkthrough
+## GIF Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='src\images\fishfacts-GoogleChrome2025-03-1423-50-21-ezgif.com-video-to-gif-converter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='src\images\fishfacts-GoogleChrome2025-03-1423-50-21-ezgif.com-video-to-gif-converter.gif' title='Video Walkthrough' width='' alt='Walkthrough' />
 
-GIF created with ...
+GIF created with 
 [ezgif](ezgif.com)
 
 <!-- ## Notes
