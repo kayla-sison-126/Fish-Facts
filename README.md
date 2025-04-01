@@ -32,9 +32,9 @@ Here's a walkthrough of implemented user stories:
 GIF created with 
 [ezgif](ezgif.com)
 
-<!-- ## Notes
+## Notes
 
-Describe any challenges encountered while building the app. -->
+"Fish Facts!" was developed as a project for CodePath's WEB 102 course, Intermediate Web Development.
 
 ## License
 
