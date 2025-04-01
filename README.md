@@ -1,10 +1,16 @@
 # Web Development Project 3 - Fish Facts!
 
-Submitted by: Kayla Sison
+<!-- Submitted by: Kayla Sison -->
 
-This web app: allows users to test their fish knowledge with a fun question set, and also learn the material through studying the cards--guessing the answer, checking with the correct one, and shuffling the order of the questions.
+This web app allows users to test their fish knowledge with a fun question set, and also learn the material through studying the cards--guessing the answer, checking with the correct one, and shuffling the order of the questions.
 
-Time spent: 2 hours spent in total
+<!-- added: -->
+
+## Technologies Used
+
+HTML, CSS, JavaScript, React
+
+<!-- Time spent: 2 hours spent in total -->
 
 ## Required Features
 
@@ -14,16 +20,16 @@ The following **required** functionality is completed:
 - [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
 - [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
 - [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
-
+<!-- 
 The following **optional** features are implemented:
-
+-->
 - [x] A shuffle button is used to randomize the order of the cards
-- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+<!-- - [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
 - [ ] A counter displays the user's current and longest streak of correct responses
 - [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
 
 The following **additional** features are implemented:
-
+-->
 * [x] "Times studied" count, which counts the amount of times that every card is cycled through
 
 ## Video Walkthrough
@@ -35,9 +41,9 @@ Here's a walkthrough of implemented user stories:
 GIF created with ...
 [ezgif](ezgif.com)
 
-## Notes
+<!-- ## Notes
 
-Describe any challenges encountered while building the app.
+Describe any challenges encountered while building the app. -->
 
 ## License
 
