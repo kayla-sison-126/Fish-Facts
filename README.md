@@ -21,7 +21,7 @@ The following functionality is completed:
 - [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
 - [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
 - [x] **A shuffle button is used to randomize the order of the cards**
-* [x] **"Times studied" count, which counts the amount of times that every card is cycled through**
+- [x] **"Times studied" count, which counts the amount of times that every card is cycled through**
 
 ## GIF Walkthrough
 <img src='src\images\fishfacts-GoogleChrome2025-03-1423-50-21-ezgif.com-video-to-gif-converter.gif' title='Video Walkthrough' width='' alt='Walkthrough' />
